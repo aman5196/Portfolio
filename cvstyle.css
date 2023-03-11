@@ -3,14 +3,17 @@
     margin:0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
-    colour:black;
+    
 }
 .top{
     height:100vh;
     width:100%;
-    background-image:url(images/my.jpg);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
+}
+.logo{
+    background-color: rgb(9, 174, 239);
 }
 nav{
     display:flex;
@@ -32,7 +35,7 @@ nav ul li a {
     font-weight: bold;
 }
 nav ul li a:hover {
-    color:red;
+    color:orange;
     transition: .4s;
 }
 .button{
@@ -47,20 +50,33 @@ nav ul li a:hover {
 }
 .button:hover{transform:scale(1.2);}
 .me{
-    width:300px;
-    height: 300px;
-    background-image:url(images/photo.jpg);
-    background-size:100%;
-    background-repeat: no-repeat;
-    border-radius: 100px;
-  margin-left: 600px;
-  margin-top: 20px;
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom:0;
+  right:100px;
 }
 .aboutcontainer {
     margin-left: 8%;
-    margin-top:15px;
-    
+    margin-top:250px;
+   
 }
+.aboutcontainer h1{
+    font-size: 60px;
+    margin-bottom:20px;
+}
+
+.me img{
+    height: 100%;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    transition: left 2s, right 2s;
+    overflow:hidden;
+}
+.me:hover .shape{bottom:40px;}
+.me:hover .myself{left:45%;}
 
 /*-----------education details-------*/
 .edu{ height:100vh;
@@ -68,12 +84,19 @@ nav ul li a:hover {
     background-image:url(images/my2.jpg);
     background-size: cover;
     background-position: center;
+    
 }
 .details{
     width:80%;
-    margin:auto;
-    text-align: center;
-    padding-top:100px;
+    border-radius: 20px;
+    margin-top: 200px;
+    margin-left:200px;
+    text-align: left;
+   padding: 10px 10px 10px 10px ;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: cover;
+    
 }
 /*-----------research-------*/
 .research{
@@ -82,13 +105,18 @@ nav ul li a:hover {
     background-image:url(images/my2.jpg);
     background-size: cover;
     background-position: center;
-    width:100%;
-    margin:auto;
-    text-align: center;
-    padding-top:100px;
 }
+.researchbox{
+    width: 80%;
+    margin:auto;
+    text-align:left;
+    padding-top:100px;
+    
+}
+
 .window{
-    border-radius:150px;
+    border-radius:50px;
+    overflow: hidden;
 }
 /*-----------skills-------*/
 .skill{
@@ -99,8 +127,15 @@ nav ul li a:hover {
     background-position: center;
     width:100%;
     margin:auto;
-    text-align: center;
+    text-align: left;
+    
+}
+.sdetail{
+    width: 80%;
+    margin:auto;
+    text-align:left;
     padding-top:100px;
+    
 }
 /*-----------Experience-------*/
 .exp{
@@ -109,9 +144,12 @@ nav ul li a:hover {
     background-image:url(images/my2.jpg);
     background-size: cover;
     background-position: center;
-    width:100%;
+    
+}
+.expdetails{
+    width: 80%;
     margin:auto;
-    text-align: center;
+    text-align:left;
     padding-top:100px;
 }
 /*-----------project-------*/
@@ -121,19 +159,32 @@ nav ul li a:hover {
     background-image:url(images/my2.jpg);
     background-size: cover;
     background-position: center;
-    width:100%;
+   
+}
+.prodetails{
+    width: 80%;
     margin:auto;
-    text-align: center;
+    text-align:left;
     padding-top:100px;
 }
+/*-----------eca-------*/
 .eta{
     height:100vh;
     width:100%;
     background-image:url(images/my2.jpg);
     background-size: cover;
-    background-position: center;
-    width:100%;
+    background-position: center;  
+}
+.etadetail{
+    width: 80%;
     margin:auto;
-    text-align: center;
+    text-align:left;
     padding-top:100px;
 }
+/*-----------footer-------*/
+.contactfooter{
+    
+    text-align:center;
+    width:100%;
+    height:50%;
+    background-color:grey}
